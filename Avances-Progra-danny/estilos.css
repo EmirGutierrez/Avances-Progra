@@ -1,0 +1,106 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+        }
+        
+        /* Estilos del menú lateral */
+        .sidebar {
+            width: 250px;
+            background-color: #1e3c72;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+        }
+
+        .sidebar img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .sidebar h2, .sidebar p {
+            text-align: center;
+            margin: 0;
+        }
+
+        .sidebar .menu {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .sidebar .menu li {
+            padding: 10px 20px;
+        }
+
+        .sidebar .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .menu li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar .menu li a:hover {
+            background-color: #2c4a88;
+            border-radius: 5px;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .profile-info {
+            background-color: #e0eaf5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .profile-info h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .status-card {
+            background-color: #d5eefc;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .status-card h3 {
+            margin: 0;
+            color: #2c4a88;
+        }
+
+        .actions {
+            text-align: center;
+        }
+
+        .actions button {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .actions button:hover {
+            background-color: #006f9c;
+        }
