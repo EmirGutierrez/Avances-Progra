@@ -1,114 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            display: flex;
-        }
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        display: flex;
+    }
         
+    .sidebar {
+        width: 250px;
+        background-color: #1e3c72;
+        color: white;
+        padding-top: 20px;
+        position: fixed;
+        height: 100%;
+    }
+
+    .sidebar img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sidebar ul li img {
+        border-radius: 0%;
+        margin-right: 10 px;
+        width: 20px;
+        height: 20px;
+        display:inline-block;
+    }
+
+    .sidebar h2, .sidebar p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .sidebar .menu {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .sidebar .menu li {
+        padding: 10px 20px;
+    }
+
+    .sidebar .menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline;
+        align-items: center;
+    }
+
+    .sidebar .menu li a i {
+        margin-right: 10px;
+    }
+
+    .sidebar .menu li a:hover {
+        background-color: #2c4a88;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .main-content {
+        margin-left: 250px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profile-info {
+        background-color: #e0eaf5;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;  
+    }
+
+    .profile-info h3 {
+        margin: 0;
+        font-weight: normal;
         
-        .sidebar {
-            width: 250px;
-            background-color: #1e3c72;
-            color: white;
-            padding-top: 20px;
-            position: fixed;
-            height: 100%;
-        }
+    }
 
-        .sidebar img {
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            display: block;
-            margin: 0 auto;
-        }
+    .status-card {
+        background-color: #d5eefc;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
 
-        .sidebar ul li img{
-            border-radius: 0%;
-            margin-right: 10 px;
-            width: 20px;
-            height: 20px;
-            display:inline-block;
-        }
+    .status-card h3 {
+        margin: 0;
+        color: #2c4a88;
+    }
 
-        .sidebar h2, .sidebar p {
-            text-align: center;
-            margin: 0;
-        }
+    .cuadros_seccion{
+        display: inline-block;
+        background-color: #dbd7cf73;
+        padding: 15px 100px;
+        border-radius: 5px;
+    }
 
-        .sidebar .menu {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
-        }
+    .actions {
+        text-align: center;
+    }
 
-        .sidebar .menu li {
-            padding: 10px 20px;
-        }
+    .main-content h3{
+        color: #2c4a88; 
+    }
 
-        .sidebar .menu li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-        }
+    .actions button {
+        background-color: #008cba;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 
-        .sidebar .menu li a i {
-            margin-right: 10px;
-        }
+    .actions button:hover {
+        background-color: #006f9c;
+    }
 
-        .sidebar .menu li a:hover {
-            background-color: #2c4a88;
-            border-radius: 5px;
-        }
+    .notification-container {
+        width: 250px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        height: 250px;
+        padding-left: 20px;
+    }
 
-        /* Contenido principal */
-        .main-content {
-            margin-left: 250px;
-            padding: 20px;
-            width: 100%;
-        }
-
-        .profile-info {
-            background-color: #e0eaf5;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        .profile-info h3 {
-            margin: 0;
-            font-weight: normal;
-        }
-
-        .status-card {
-            background-color: #d5eefc;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .status-card h3 {
-            margin: 0;
-            color: #2c4a88;
-        }
-
-        .actions {
-            text-align: center;
-        }
-
-        .actions button {
-            background-color: #008cba;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .actions button:hover {
-            background-color: #006f9c;
-        }
+    .header {
+        background-color: #ffd700;
+        color: #000;
+        font-weight: bold;
+        padding: 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 18px;
+    }

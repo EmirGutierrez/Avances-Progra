@@ -1,55 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma Escolar</title>
+    <title>Panel Escolar</title>
     <link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
 
+    
     <div class="sidebar">
         <img src="logo.png" alt="logo">
         <h2>username</h2>
         <p>Ciclo 2024</p>
         
         <ul class="menu">
-            <li><img src="hogar.png"><a href="#"><i class="fas fa-home" ></i> Inicio</a></li>
-            <li><img src="calificaciones.png"><a href="#"><i class="fas fa-book"></i> Notas</a></li>
-            <li><img src="graduacion.png"><a href="#"><i class="fas fa-list"></i> Cursos</a></li>
-            <li><img src="suscribir.png"><a href="#"><i class="fas fa-envelope"></i> Avisos</a></li>
-            <li><img src="estado-de-resultados.png"><a href="#"><i class="fas fa-bell"></i> Calendario</a></li>
+            <li><a href="escuela.html"><i class="fas fa-home"> <img src="png/003-casa.png"></i> Inicio</a></li>
+            <li><a href="notas.html"><i class="fas fa-book"> <img src="png/001-requisito.png"></i> Notas</a></li>
+            <li><a href="cursos.html"><i class="fas fa-list"><img src="png/libros.png"></i> Cursos</a></li>
+            <li><a href="calendario.html"><i class="fas fa-calendar-day"><img src="png/calendario.png"></i> Calendario</a></li>
+            <li><a href="avisos.html"><i class="fas fa-bell"><img src="png/advertencia.png"></i> Avisos</a></li>
         </ul>
     </div>
 
+    
     <div class="main-content">
         <div class="profile-info">
             <h3>Nombre: Estudiante (usuario)</h3>
-            <p>Tercero Básico<br>Profesor Guía: <br>Código personal: F491BII</p>
+            <p>Tercero Básico<br>Profesor Guía: <br>Código personal: </p>
         </div>
 
         <div class="status-card">
             <h3>Ya tienes una inscripción para el presente ciclo:</h3>
-            <p><strong>Tercero Básico - Única</strong></p>
+            <p><strong>Grado - Seccion</strong></p>
         </div>
 
         <div class="actions">
             <button>Imprimir Notas</button>
         </div>
 
-        <h3>Selecciona el ciclo</h3>
-        <select>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-        </select>
-        <div class="actions">
-            <button>Recargar Notas</button>
+        <div class="cuadros_seccion">
+            <div class="actions">
+            <h3>Visualiza tus calificaciones</h3>
+            <h4>Selecciona el ciclo</h4>
+            <select>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+            </select>
+                <button>Recargar Notas</button>
+            </div>
+        </div>
+        <div class="cuadros_seccion">
+            <h3>Notificaciones Generales</h3>
+            <div class="notification-container">
+                <div class="header">
+                    <span>HOJAS DE TRABAJO DE MATEMÁTICA Y FÍSICA</span>
+                    <span class="date">2024-05-02 11:00:55 📅</span>
+                </div>
+                <div class="content">
+                    <p>Hemos completado las cuatro hojas de matemática y física, por favor, el día Martes 07 de mayo deberán entregar en un SOBRE MANILA POR CURSO la recopilación de sus cortos y hojas de trabajo (Incluyendo la Hoja No. 4 que se entrega ese día) para poder realizar el promedio.</p>
+                    <p>Identifique su sobre con su PRIMER APELLIDO, PRIMER NOMBRE. Se recibirá únicamente el día señalado. Todas las hojas deben estar firmadas por los padres de familia. Bendiciones</p>
+                </div>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
-
