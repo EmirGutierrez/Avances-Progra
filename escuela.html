@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Escolar</title>
     <link rel="stylesheet" href="estilos.css">
-
+   
 </head>
 <body>
-
-    
     <div class="sidebar">
         <img src="logo.png" alt="logo">
-        <h2>username</h2>
+        <h2>NicolasM</h2>
         <p>Ciclo 2024</p>
         
         <ul class="menu">
@@ -24,36 +22,75 @@
         </ul>
     </div>
 
-    
     <div class="main-content">
         <div class="profile-info">
-            <h3>Nombre: Estudiante (usuario)</h3>
-            <p>Tercero Básico<br>Profesor Guía: <br>Código personal: </p>
+            <h3>Nombre: Nicolas Andres Morales Lopez (NicolasM)</h3>
+            <p>Tercero Básico<br>Profesor Guía: Samuel Diaz<br>Código personal: 01967</p>
         </div>
 
         <div class="status-card">
             <h3>Ya tienes una inscripción para el presente ciclo:</h3>
-            <p><strong>Grado - Seccion</strong></p>
-        </div>
-
-        <div class="actions">
-            <button>Imprimir Notas</button>
+            <p><strong>Tercero Basico - Seccion A</strong></p>
         </div>
 
         <div class="cuadros_seccion">
             <div class="actions">
-            <h3>Visualiza tus calificaciones</h3>
-            <h4>Selecciona el ciclo</h4>
-            <select>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-            </select>
-                <button>Recargar Notas</button>
+                <h3>Visualiza tus calificaciones</h3>
+                <h4>Selecciona el ciclo</h4>
+                <select>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+                <button onclick="mostrarCalificaciones()">Recargar Notas</button>
+            </div>
+            
+            <div id="seccionCalificaciones">
+                <h2>Calificaciones del Alumno</h2>
+                <table id="tablaCalificaciones">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Matemáticas</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Español</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Ciencias</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Historia</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Educación fisica</td>
+                            <td>86</td>
+                        </tr>
+                        <tr>
+                            <td>Expresión Artistica</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnología</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="botonOcultar" onclick="ocultarCalificaciones()">Ocultar Notas</button>
             </div>
         </div>
+
         <div class="cuadros_seccion">
             <h3>Notificaciones Generales</h3>
             <div class="notification-container">
@@ -68,5 +105,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function mostrarCalificaciones(){
+            // Muestra el contenedor completo de calificaciones
+            document.getElementById("seccionCalificaciones").style.display = "block";
+        }
+
+        function ocultarCalificaciones(){
+            // Oculta el contenedor completo de calificaciones
+            document.getElementById("seccionCalificaciones").style.display = "none";
+        }
+    </script>
 </body>
 </html>
+
